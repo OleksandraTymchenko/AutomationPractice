@@ -10,5 +10,4 @@ public class UiTestsCases {
         WebDriver chromeDriver = new ChromeDriver();
         chromeDriver.get("https://www.youtube.com/");
     }
-
 }
