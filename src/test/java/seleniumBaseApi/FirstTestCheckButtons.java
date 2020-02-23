@@ -89,6 +89,7 @@ public class FirstTestCheckButtons extends WebdriverSettings {
     @Test(priority = 15)
     public void testClickDropdownLinkTwo() {
         driver.get("https://formy-project.herokuapp.com/buttons");
+        driver.findElement(By.xpath("//button[contains(@id,'btnGroupDrop2')]")).click();
         driver.findElement(By.xpath("//div//a[contains(text(),'Dropdown link 2')]")).click();
     }
 
