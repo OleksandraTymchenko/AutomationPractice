@@ -24,8 +24,8 @@ public class CheckEmailUnhappyPath {
     }
 
     @Test(dataProvider = "invalidEmailProvider")
-    public void invalidEmailTest(String email) {
-        boolean valid = Email.isEmailCorrect(email);
+    public void invalidEmailTest(String email){
+    boolean valid = Email.isEmailCorrect(email);
         Assert.assertFalse("correct email", valid);
     }
 
